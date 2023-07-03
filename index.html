@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="icon.ico">
+    <title>成都信息工程大学</title>
+<!--    <link href="css/chunk-050958f5.8cd0ca98.css" rel="prefetch">-->
+<!--    <link href="css/chunk-121c8fde.5b012c86.css" rel="prefetch">-->
+<!--    <link href="css/chunk-1fdcc41a.9b87fd1a.css" rel="prefetch">-->
+<!--    <link href="css/chunk-241fa02e.8e816f36.css" rel="prefetch">-->
+<!--    <link href="css/chunk-29ad6076.0da50ea7.css" rel="prefetch">-->
+<!--    <link href="css/chunk-2f354677.dafabb23.css" rel="prefetch">-->
+<!--    <link href="css/chunk-3517feb7.15d80866.css" rel="prefetch">-->
+<!--    <link href="css/chunk-4b685509.84a62c36.css" rel="prefetch">-->
+<!--    <link href="css/chunk-4c9ba6af.dee97a14.css" rel="prefetch">-->
+<!--    <link href="css/chunk-4cbf416c.f41296f5.css" rel="prefetch">-->
+<!--    <link href="css/chunk-5336293e.7418fa1c.css" rel="prefetch">-->
+<!--    <link href="css/chunk-6d51d516.b428bb9b.css" rel="prefetch">-->
+<!--    <link href="css/chunk-71c26a9f.6e7ef30c.css" rel="prefetch">-->
+<!--    <link href="css/chunk-7909ab0b.27a29b38.css" rel="prefetch">-->
+<!--    <link href="css/chunk-7bc15926.30de3298.css" rel="prefetch">-->
+<!--    <link href="css/chunk-7c04a4e4.040d6198.css" rel="prefetch">-->
+<!--    <link href="css/chunk-b622c2a8.3bcb9a32.css" rel="prefetch">-->
+<!--    <link href="css/chunk-b64d54a8.1b6991c8.css" rel="prefetch">-->
+<!--    <link href="css/chunk-d020b4f4.1a246989.css" rel="prefetch">-->
+<!--    <link href="js/chunk-050958f5.5fb03695.js" rel="prefetch">-->
+<!--    <link href="js/chunk-121c8fde.c4bded44.js" rel="prefetch">-->
+<!--    <link href="js/chunk-1fb26b20.8a230022.js" rel="prefetch">-->
+<!--    <link href="js/chunk-1fdcc41a.797a28d6.js" rel="prefetch">-->
+<!--    <link href="js/chunk-241fa02e.ac7192ad.js" rel="prefetch">-->
+<!--    <link href="js/chunk-29ad6076.b8a6c291.js" rel="prefetch">-->
+<!--    <link href="js/chunk-2f354677.e518284a.js" rel="prefetch">-->
+<!--    <link href="js/chunk-3517feb7.4970b15b.js" rel="prefetch">-->
+<!--    <link href="js/chunk-4b685509.c8b51328.js" rel="prefetch">-->
+<!--    <link href="js/chunk-4c9ba6af.b52fc8da.js" rel="prefetch">-->
+<!--    <link href="js/chunk-4cbf416c.ecd3fa91.js" rel="prefetch">-->
+<!--    <link href="js/chunk-5336293e.7bfa2a09.js" rel="prefetch">-->
+<!--    <link href="js/chunk-6d51d516.5138bc94.js" rel="prefetch">-->
+<!--    <link href="js/chunk-71c26a9f.b4231c5c.js" rel="prefetch">-->
+<!--    <link href="js/chunk-7909ab0b.f82eccda.js" rel="prefetch">-->
+<!--    <link href="js/chunk-7bc15926.eeeec7c7.js" rel="prefetch">-->
+<!--    <link href="js/chunk-7c04a4e4.285fffdb.js" rel="prefetch">-->
+<!--    <link href="js/chunk-b622c2a8.ef703d08.js" rel="prefetch">-->
+<!--    <link href="js/chunk-b64d54a8.00385f71.js" rel="prefetch">-->
+<!--    <link href="js/chunk-d020b4f4.b4217564.js" rel="prefetch">-->
+<!--    <link href="css/app.7eff223a.css" rel="preload" as="style">-->
+<!--    <link href="css/chunk-vendors.fe6053b7.css" rel="preload" as="style">-->
+<!--    <link href="js/app.6266ed97.js" rel="preload" as="script">-->
+<!--    <link href="js/chunk-vendors.5dde7ebb.js" rel="preload" as="script">-->
+<!--    <link href="css/chunk-vendors.fe6053b7.css" rel="stylesheet">-->
+<!--    <link href="css/app.7eff223a.css" rel="stylesheet">-->
+<!--    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">-->
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">-->
+<!--    <link rel="manifest" href="manifest.json">-->
+<!--    <meta name="theme-color" content="#4DBA87">-->
+<!--    <meta name="apple-mobile-web-app-capable" content="no">-->
+<!--    <meta name="apple-mobile-web-app-status-bar-style" content="default">-->
+<!--    <meta name="apple-mobile-web-app-title" content="changandaxue">-->
+<!--    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-152x152.png">-->
+<!--    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#4DBA87">-->
+<!--    <meta name="msapplication-TileImage" content="img/icons/msapplication-icon-144x144.png">-->
+<!--    <meta name="msapplication-TileColor" content="#000000">-->
+</head>
+<script>
+    const listData = {
+        name: '王旭',
+        sex: '男',
+        birthday: '2001-03-24',
+        college: '大气科学学院',
+        subject: '气象学',
+        year: '2023',
+        type: '硕士'
+    }
+    function inputUpate() {
+        //TODO 修改为指定的data值
+        const data = '107103370309712'
+        const input = document.getElementById('input')
+        const text = input.value
+        const divBox = document.getElementById('divBox')
+        if (text === data) {
+            //TODO 请求接口给listData赋值
+            divBox.style.display = "flex"
+            //赋值
+            document.getElementById('name').innerHTML = listData.name
+            document.getElementById('sex').innerHTML = listData.sex
+            document.getElementById('birthday').innerHTML = listData.birthday
+            document.getElementById('college').innerHTML = listData.college
+            document.getElementById('subject').innerHTML = listData.subject
+            document.getElementById('year').innerHTML = listData.year
+            document.getElementById('type').innerHTML = listData.type
+        }else{
+            divBox.style.display = "none"
+            alert("您输入的编号有误");
+        }
+    }
+</script>
+
+<body><noscript><strong>We're sorry but chengxinda doesn't work properly without JavaScript enabled. Please enable it
+            to continue.</strong></noscript>
+    <div id="app">
+        <div
+            style="display: flex;flex-direction: column; min-height:300px;background-color: #333333;justify-items: center;align-items: center;width: 100%;margin-top: 50px;">
+            <img src="img/logo_03.png"
+                style="width: 50%;height: auto;display: block;margin-top: 10px;" />
+            <span style="color: aliceblue;margin-top: 10px;">成都信息工程大学研究生录取通知书查询</span>
+            <input id="input" style="width: 80%;margin-top: 20px;" />
+            <button onclick="inputUpate()"
+                style="width: 50px;background-color: #3286c4;color: aliceblue; border: none;margin-top: 20px;">确认</button>
+            <div id="divBox"
+                style="background-color: white;display: flex;flex-direction: column;margin:40px 20px;width: 80%;padding: 20px;display:none;">
+                <span style="text-align: center;">查询结果</span>
+                <br/>
+                <table>
+                    <tr>
+                        <td><span id="name" /></td>
+                        <td><span id="sex" /></td>
+                    </tr>
+                    <tr>
+                        <td><span>出生日期:</span></td>
+                        <td><span id="birthday" /></td>
+                    </tr>
+                </table>
+                <span>该同学已被成都信息工程大学</span>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span id="college" style="text-decoration: underline;"></span>录取为<span
+                        id="year" style="text-decoration: underline;"></span>级攻读<span id="subject"
+                        style="text-decoration: underline;"></span>专业<span id="type"
+                        style="text-decoration: underline;"></span>学位的研究生</div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="mobile_static/js/chunk-vendors.5dde7ebb.js"></script> -->
+    <!-- <script src="mobile_static/js/app.6266ed97.js"></script> -->
+</body>
+
+</html>
